@@ -1,4 +1,4 @@
-For coins = [10, 50, 100] and quantity = [1, 2, 1], the output should be
+For <b>coins = [10, 50, 100]<b> and quantity = [1, 2, 1], the output should be
 possibleSums(coins, quantity) = 9.
 
 Here are all the possible sums:
