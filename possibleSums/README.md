@@ -1,5 +1,6 @@
 1. Problem
   - You have a collection of `coins`, and you know the values of the `coins` and the `quantity` of each type of coin in it. You want to know how many distinct sums you can make from non-empty groupings of these `coins`.
+
 2. Example
   - For `coins = [10, 50, 100]` and `quantity = [1, 2, 1]`, the output should be
   `possibleSums(coins, quantity) = 9`.
@@ -19,8 +20,33 @@
     - 10 + 100 = 110.
 
   -> As you can see, there are 9 distinct sums that can be created from non-empty groupings of your coins.
+  
 3. Solution
   - Create a set save all each other sum. (1)
   - Create a set() save all element[i] * j (j is the number of occurrences). (2)
   - Create a set() save all element sum for (1) and (2). (3) 
   - Merge (2) and (3) -> back to (2)
+
+4. Code
+      function possibleSums(coins, quantity) {
+          let setAllItem = new Set()
+          for(let i=0;i<coins.length;i++){
+              let setQuantity = new Set()
+              for(let j=1;j<=quantity[i];j++){
+                  setQuantity.add(coins[i]*j)
+              }
+              let setSum = new Set()
+              for(let m of setQuantity.entries()){
+                  for(let n of setAllItem.entries()){
+                      setSum.add(parseInt(m) + parseInt(n))
+                  }
+              }
+              for(let j of setSum.entries()){
+                  setAllItem.add(parseInt(j))
+              }
+              for(let j of setQuantity.entries()){
+                  setAllItem.add(parseInt(j))
+              }
+          }
+          return setAllItem.size
+      }
