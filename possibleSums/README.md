@@ -1,6 +1,6 @@
-1.Problem
+1. Problem
   - You have a collection of `coins`, and you know the values of the `coins` and the `quantity` of each type of coin in it. You want to know how many distinct sums you can make from non-empty groupings of these `coins`.
-2.Example
+2. Example
   For `coins = [10, 50, 100]` and `quantity = [1, 2, 1]`, the output should be
   `possibleSums(coins, quantity) = 9`.
 
