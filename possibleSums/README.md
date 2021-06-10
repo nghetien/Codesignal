@@ -19,3 +19,8 @@
     - 10 + 100 = 110.
 
   -> As you can see, there are 9 distinct sums that can be created from non-empty groupings of your coins.
+3. Solution
+  - Create a set save all each other sum. (1)
+  - Create a set() save all element[i] * j (j is the number of occurrences). (2)
+  - Create a set() save all element sum for (1) and (2). (3) 
+  - Merge (2) and (3) -> back to (2)
