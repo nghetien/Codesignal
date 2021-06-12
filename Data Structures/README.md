@@ -24,3 +24,26 @@
     ```lists = [x**2 for i in range(10)]```
     
     ``` Kết quả trả về: [0, 1, 4, 9, 16, 25, 36, 49, 64, 81] ```
+# 2. Tuples and Sequences¶
+- Là kiểu cấu trúc dữ liệu không thể thêm sửa xóa được dữ liệu bên trong chỉ được phép lấy ra bằng temp[i]
+- Có thể khởi tạo tuples bên trong chứ một list
+
+    ```v = ([1, 2, 3], [3, 2, 1])```
+
+    ``` Kết quả trả về: ([1, 2, 3], [3, 2, 1]) ```
+# 3. Sets
+- Là kiểu dữ liệu mà lưu trong đó không có sự trùng lặp
+- Khi thêm phần tử vào set() thì sẽ được check sự trùng lặp nếu không trùng mới thêm vào
+
+    - a = set('abracadabra')
+    - >>> b = set('alacazam')
+    - >>> a                                  # unique letters in a
+    - {'a', 'r', 'b', 'c', 'd'}
+    - >>> a - b                              # letters in a but not in b
+    - {'r', 'd', 'b'}
+    - >>> a | b                              # letters in a or b or both
+    - {'a', 'c', 'r', 'd', 'b', 'm', 'z', 'l'}
+    - >>> a & b                              # letters in both a and b
+    - {'a', 'c'}
+    - >>> a ^ b                              # letters in a or b but not both
+    - {'r', 'd', 'b', 'm', 'z', 'l'}
