@@ -34,6 +34,8 @@
 # 3. Sets
 - Là kiểu dữ liệu mà lưu trong đó không có sự trùng lặp
 - Khi thêm phần tử vào set() thì sẽ được check sự trùng lặp nếu không trùng mới thêm vào
+- `set1.intersection(set2)` : Trả về giá trị giao nhau giữa 2 tập
+- `set1.union(set2)` : Trả về giá trị hợp của 2 tập
 
         a = set('abracadabra')
         >>> b = set('alacazam')
