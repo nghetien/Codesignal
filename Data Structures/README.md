@@ -20,7 +20,5 @@
 - Với việc xóa phần tử ở đầu `popLeft()`
 ## 1.3. Tạo một lists nhanh
 - Sử dụng là kết quả trả về của phần tử trong một trình tự hoặc vòng lặp
-
-```lists = [x**2 for i in range(10)]```
-
-``` Kết quả trả về: [0, 1, 4, 9, 16, 25, 36, 49, 64, 81] ```
+    ```lists = [x**2 for i in range(10)]```
+    ``` Kết quả trả về: [0, 1, 4, 9, 16, 25, 36, 49, 64, 81] ```
