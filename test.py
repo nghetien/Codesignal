@@ -1,3 +1,2 @@
-temp = [1 ,4 ,5 ,2]
-temp.sort()
-print(temp)
+knights = {'gallahad': 'the pure', 'robin': 'the brave'}
+print(knights.items())
