@@ -10,3 +10,15 @@
 - `list.sort(key=None,reverse=True or False)` : sắp xếp mảng và không trả về giá trị (None)
     + Khác với hàm `sorted()` : Có trả về giá trị khi gán vào biến
 - `list.reverse()` : Đảo ngược lại các phần tử trong mảng
+## 1.1. Sử dụng lists như một Stacks
+- Vào trước ra sau, vào sau ra trước
+- Với việc thêm phần từ vào cuối dùng `append(item)`
+- Với việc xóa phần tử ở cuối `pop()`
+## 1.2. Sử dụng lists như một Queues
+- Vào trước ra trước, vào sau ra sau
+- Với việc thêm phần từ vào cuối dùng `append(item)`
+- Với việc xóa phần tử ở đầu `popLeft()`
+## 1.3. Tạo một lists nhanh
+- Sử dụng là kết quả trả về của phần tử trong một trình tự hoặc vòng lặp
+``` `lists = [x**2 for i in range(10)]` ```
+``` Kết quả trả về: [0, 1, 4, 9, 16, 25, 36, 49, 64, 81] ```
