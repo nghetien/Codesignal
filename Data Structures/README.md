@@ -10,3 +10,4 @@
     - `list.sort(key=None,reverse=True or False)` : sắp xếp mảng và không trả về giá trị (None)
         + Khác với hàm sorted() : Có trả về giá trị khi gán vào biến
     - `list.reverse()` : Đảo ngược lại các phần tử trong mảng
+    sảu
